@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Form</title>
+</head>
+<body>
+    <body style="background-color:#030D3B;"></body>
+
+<h1 style="color: White;" >Student Registration Form</h1>
+<form action ="action_page.php" method="post">
+    <table>
+        <tr>
+            <td style=" padding:8px;"><label for="name" style="color: White;">Student Name</label><br></td>
+            <td><input type="text" id="name" name="name" value=""><br></td>
+        </tr>
+        <tr>
+            <td style=" padding:8px;"><label for="roll" style="color: White;">Roll Number</label><br></td>
+            <td><input type="text" id="roll" name="roll" value=""><br></td>
+        </tr>
+        <tr>
+            <td style=" padding:8px;"><label for="email" style="color: White;">Email</label><br></td>
+            <td><input type="email" id="email" name="email" value=""><br></td>
+        </tr>
+        <tr>
+            <td style=" padding:8px;"><label for="number" style="color: White;">Phone Number</label><br> </td>
+            <td><input type="tel" id="number" name="number" value=""><br></td>
+        </tr>
+        <tr>
+            <td style=" padding:8px;"><label style="color: White;">Gender</label><br></td>
+            <td>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male" style="color: White;">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female" style="color: White;">Female</label><br>
+                </td>
+        </tr>
+        <tr>
+           <td style=" padding:8px;"><label for="Branch" style="color: White;"> Choose your Branch</label><br></td>
+           <td>
+    <select id="Branch" name="Branch">
+        <option value="IT">Information Technolgoy</option>
+        <option value="CSE">Computer Science</option>
+        <option value="AI&DS">Artitfical Intelligence & Data Science</option>
+        <option value="CHEM">Chemical Engineering</option>
+    </td>
+    </select>
+    </table>
+    <br>
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>

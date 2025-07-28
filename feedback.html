@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Form</title>
+</head>
+<body>
+    <body style="background-color:#030D3B;"></body>
+
+<h1 style="color: White;" >Student Registration Form</h1>
+<form action ="action_page.php" method="post">
+    <table>
+        <tr>
+            <td style=" padding:8px;"><label for="name" style="color: White;">Student Name</label><br></td>
+            <td><input type="text" id="name" name="name" value=""><br></td>
+        </tr>
+        <tr>
+            <td style=" padding:8px;"><label for="email" style="color: White;">Email</label><br></td>
+            <td><input type="email" id="email" name="email" value=""><br></td>
+        </tr>
+        <tr>
+            <td style=" padding:8px;"><label for="message" style="color: White;">Feedback</label><br></td>
+            <td><textarea id="message" name="message" value=""></textarea><br></td>
+        </tr>
+        <tr>
+            <td style=" padding:8px;"><label style="color: White;">How satisfied are you?</label><br></td>
+            <td>
+                <input type="radio" id="satisfied" name="satisfied" value="satisfied">
+                <label for="satisfied" style="color: White;">Satisfied</label><br>
+                <input type="radio" id="neutral" name="satisfied" value="satisfied">
+                <label for="neutral" style="color: White;">Neutral</label><br>
+                <input type="radio" id="disappointed" name="satisfied" value="satisfied">
+                <label for="disappointed" style="color: White;">disappointed</label><br>
+
+                </td>
+        </tr>
