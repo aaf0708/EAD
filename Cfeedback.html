@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            padding: 40px;
+            background-image: url(ubg.jpg);
+        }
+        form{
+            margin:auto;
+            background-color: #1e1e1e;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255,255,255,0.1);
+        }
+        table{
+            width: 100%;
+        }
+        td{
+            padding: 12px;
+        }
+        input[type="text"],
+input[type="email"],
+textarea{
+    width:100%;
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    color:#080808;
+}
+input[type="submit"]{
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover{
+    background-color: #0097a7;
+}
+    </style>
+<head>
+<title>Feedback Form</title>
+</head>
+<body>
+<h1 >Feedback Form</h1>
+<form action ="action_page.php" method="post">
+    <table>
+        <tr>
+            <td style=" padding:8px;"><label for="name" style="color: White;">Student Name</label><br></td>
+            <td><input type="text" id="name" name="name" value=""><br></td>
+        </tr>
+        <tr>
+            <td style=" padding:8px;"><label for="email" style="color: White;">Email</label><br></td>
+            <td><input type="email" id="email" name="email" value=""><br></td>
+        </tr>
+        <tr>
+            <td style=" padding:8px;"><label for="message" style="color: White;">Feedback</label><br></td>
+            <td><textarea id="message" name="message" value=""></textarea><br></td>
+        </tr>
+        <tr>
+            <td style=" padding:8px;"><label style="color: White;">How satisfied are you?</label><br></td>
+            <td>
+                <input type="radio" id="satisfied" name="satisfied" value="satisfied">
+                <label for="satisfied" style="color: White;">Satisfied</label><br>
+                <input type="radio" id="neutral" name="satisfied" value="satisfied">
+                <label for="neutral" style="color: White;">Neutral</label><br>
+                <input type="radio" id="disappointed" name="satisfied" value="satisfied">
+                <label for="disappointed" style="color: White;">disappointed</label><br>
+
+                </td>
+        </tr>
+        <br>
+<!--     <button type="submit">Submit</button>
+ -->
+</form>
+
+</body>
+</html>

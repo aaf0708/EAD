@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body{
+    font-family: Arial,sans-serif;
+    background-color: #f2f6fc;
+    padding:40px;
+   /*  display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0; */
+    background-image: url(bg.jpg);
+}
+form{
+    background-color: #ffffff;
+    padding:30px 40px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    width:350px
+}
+table{
+    width:100%;
+}
+
+td{
+    padding:10px
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    border-radius:4px;
+    border:1px solid #ccc;
+}
+button{
+    padding:10px 20px;
+    background-color: #1976d2;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+button:hover{
+    background: color #145ca4;
+}
+.submit-cell{
+    text-align: center;
+    padding-top:20px;
+}
+</style>
+<head>
+<title>Student Registration Form</title>
+<link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <body style="background-color:#fafafc;"></body>
+
+<h1 style="color: black;" >Student Registration Form</h1>
+<form action ="action_page.php" method="post">
+    <table>
+        <tr>
+            <td style=" padding:8px;"><label for="name" style="color: black;">Student Name</label><br></td>
+            <td><input type="text" id="name" name="name" value=""><br></td>
+        </tr>
+        <tr>
+            <td style=" padding:8px;"><label for="roll" style="color: black;">Roll Number</label><br></td>
+            <td><input type="text" id="roll" name="roll" value=""><br></td>
+        </tr>
+        <tr>
+            <td style=" padding:8px;"><label for="email" style="color: black;">Email</label><br></td>
+            <td><input type="email" id="email" name="email" value=""><br></td>
+        </tr>
+        <tr>
+            <td style=" padding:8px;"><label for="number" style="color: black;">Phone Number</label><br> </td>
+            <td><input type="tel" id="number" name="number" value=""><br></td>
+        </tr>
+        <tr>
+            <td style=" padding:8px;"><label style="color: black;">Gender</label><br></td>
+            <td>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male" style="color: black;">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female" style="color: black;">Female</label><br>
+                </td>
+        </tr>
+        <tr>
+           <td style=" padding:8px;"><label for="Branch" style="color: black;"> Choose your Branch</label><br></td>
+           <td>
+    <select id="Branch" name="Branch">
+        <option value="IT">Information Technolgoy</option>
+        <option value="CSE">Computer Science</option>
+        <option value="AI&DS">Artitfical Intelligence & Data Science</option>
+        <option value="CHEM">Chemical Engineering</option>
+    </td>
+    </select>
+    </table>
+    <br>
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>

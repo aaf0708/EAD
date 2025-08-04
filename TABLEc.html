@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right,#e3f2fd,#ffffff);
+    color: #333;
+    margin: 0;
+    padding: 40px 20px;
+}
+.heading{
+    text-align: center;
+    font-size: 2.2rem;
+    color: #3f51b5;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(63, 81, 181, 0.2);
+}
+.table-container{
+    overflow-x: auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius:12px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+table{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #fafafa;
+}
+th,td{
+    border:1px solid #d0d0d0;
+    padding: 12px 14px;
+    text-align: center;
+    font-size: 0.95rem;
+    vertical-align: middle;
+}
+th{
+    background-color: #e8eaf6;
+    color: #303f9f;
+    font-weight: bold;
+}
+tr:nth-child(odd) {
+  background-color: #f3f4f6; /* Light gray for odd rows */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* White for even rows */
+}
+</style>
+<body>
+
+<h2>Time Table</h2>
+
+<table border="1" cellpadding="10" >
+  <tr>
+    <th>Day/Time</th>
+    <th>I<br>9:10 am - 10:10 am</th>
+    <th>II<br>10:10 am - 11:10 am</th>
+    <th>III<br>11:15 am - 12:15 pm</th>
+    <th>IV<br>1:00 pm - 2:00 pm</th>
+    <th>V<br>2:00 pm - 3:00 pm</th>
+    <th>VI<br>3:00 pm - 4:00 pm</th>
+  </tr>
+  <tr>
+    <td>MONDAY</td>
+    <td colspan="2">EAB LAB(B1)/ CN LAB(B2)</td>
+    <td>FLAT</td>
+    <td>ML</td>
+    <td>PE-2</td>
+    <td>SE</td>
+  </tr>
+  <tr>
+    <td>tuesday</td>
+    <td colspan="2">ML LAB(B1)/ CT LAB(B2)</td>
+    <td>EAD</td>
+    <td>CN</td>
+    <td>CC LAB(B1)/ SPORTS(B2)</td>
+    <td>CC LAB(B1)/ SPORTS(B2)</td>
+  </tr>
+  <tr>
+    <td>WEDNESDAY</td>
+    <td>PE-2</td>
+    <td>EAD</td>
+    <td colspan="2">ML LAB(B2)/CT LAB(B1)</td>
+    <td>SE</td>
+    <td>ML</td>
+  </tr>
+  <tr>
+    <td>THURSDAY</td>
+    <td>FLAT</td>
+    <td>CN</td>
+    <td colspan="2">CN LAB(B1)/EAD LAB(B1)</td>
+    <td>ML</td>
+    <td>EAD</td>
+  </tr>
+  <tr>
+    <td>FRIDAY</td>
+    <td>SE</td>
+    <td colspan="2">CC LAB(B2)/ SPORTS(B1)</td>
+    <td>pe-2</td>
+    <td>FLAT</td>
+    <td>CN</td>
+  </tr>
+</table>
+
+
+</body>
+</html>
