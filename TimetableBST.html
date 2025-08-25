@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Table</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #e3f2fd, #ffffff);
+    }
+    .table thead th {
+      background-color: #3f51b5 !important;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .table-striped tbody tr:nth-of-type(odd) {
+      background-color: #f1f5ff; 
+    }
+    .table-striped tbody tr:nth-of-type(even) {
+      background-color: #ffffff; 
+    }
+    .table-hover tbody tr:hover {
+      background-color: #e8eaf6; 
+    }
+  </style>
+</head>
+<body class="p-4">
+
+  <div class="container">
+    <h2 class="text-center text-primary fw-bold mb-4">IT-1 WEEKLY TIME TABLE</h2>
+
+    <div class="table-responsive shadow-lg rounded">
+      <table class="table table-bordered table-striped table-hover align-middle text-center">
+        <thead>
+          <tr>
+            <th>Day/Time</th>
+            <th>I<br>9:10 am - 10:10 am</th>
+            <th>II<br>10:10 am - 11:10 am</th>
+            <th>III<br>11:15 am - 12:15 pm</th>
+            <th>IV<br>1:00 pm - 2:00 pm</th>
+            <th>V<br>2:00 pm - 3:00 pm</th>
+            <th>VI<br>3:00 pm - 4:00 pm</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="fw-bold">MONDAY</td>
+            <td colspan="2">EAB LAB(B1)/ CN LAB(B2)</td>
+            <td>FLAT</td>
+            <td>ML</td>
+            <td>PE-2</td>
+            <td>SE</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">TUESDAY</td>
+            <td colspan="2">ML LAB(B1)/ CT LAB(B2)</td>
+            <td>EAD</td>
+            <td>CN</td>
+            <td colspan="2">CC LAB(B1)/ SPORTS(B2)</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">WEDNESDAY</td>
+            <td>PE-2</td>
+            <td>EAD</td>
+            <td colspan="2">ML LAB(B2)/ CT LAB(B1)</td>
+            <td>SE</td>
+            <td>ML</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">THURSDAY</td>
+            <td>FLAT</td>
+            <td>CN</td>
+            <td colspan="2">CN LAB(B1)/ EAD LAB(B1)</td>
+            <td>ML</td>
+            <td>EAD</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">FRIDAY</td>
+            <td>SE</td>
+            <td colspan="2">CC LAB(B2)/ SPORTS(B1)</td>
+            <td>PE-2</td>
+            <td>FLAT</td>
+            <td>CN</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
