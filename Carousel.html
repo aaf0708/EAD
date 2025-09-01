@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Gallery</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .carousel-caption {
+      background: rgba(0,0,0,0.5);
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .carousel-item img {
+  height: 400px;       /* or 500px, depending on your design */
+  object-fit: cover;   /* crop edges instead of stretching */
+}
+
+  </style>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Gallery</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Fix carousel height */
+    .carousel-item img {
+      height: 400px;        /* adjust as you like */
+      object-fit: cover;    /* crop instead of stretch */
+    }
+    .carousel-caption {
+      background: rgba(0,0,0,0.5);
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .navbar-custom {
+  background-color: #095006; /* Firebrick Red */
+}
+
+  </style>
+</head>
+<body>
+
+<!-- Header / Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">CBIT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Departments</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Carousel -->
+<div id="campusCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    
+    <!-- Slide 1 -->
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="vibrant.jpeg" class="d-block w-100" alt="Campus Life">
+      <div class="carousel-caption">
+        <h3>Vibrant Campus Life</h3>
+        <p>Join events, clubs, and cultural fests throughout the year.</p>
+        <a href="https://www.cbit.ac.in/campuslife_post/campus-life/" class="btn btn-primary">Explore Events</a>
+      </div>
+    </div>
+    
+    <!-- Slide 2 -->
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="library.jpeg" class="d-block w-100" alt="Library">
+      <div class="carousel-caption">
+        <h3>World-class Library</h3>
+        <p>Access thousands of books, journals, and digital resources.</p>
+        <a href="https://www.library.cbit.ac.in/" class="btn btn-success">Visit Library</a>
+      </div>
+    </div>
+    
+    <!-- Slide 3 -->
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="sportss.jpg" class="d-block w-100" alt="Sports">
+      <div class="carousel-caption">
+        <h3>Sports & Fitness</h3>
+        <p>From football to yoga, stay fit and active on campus.</p>
+        <a href="https://www.cbit.ac.in/campuslife_post/campus-life/" class="btn btn-warning">Join Sports Club</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#campusCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#campusCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Cards Section -->
+<div class="container mt-5">
+  <div class="row text-center">
+    
+    <!-- Library Card -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow">
+        <img src="library.jpeg" class="card-img-top" alt="Library">
+        <div class="card-body">
+          <h5 class="card-title">Library</h5>
+          <p class="card-text">A modern library with study zones, research resources, and e-learning tools.</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Labs Card -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow">
+        <img src="lab.jpg" class="card-img-top" alt="Labs">
+        <div class="card-body">
+          <h5 class="card-title">Labs</h5>
+          <p class="card-text">State-of-the-art labs for hands-on learning in science and engineering.</p>
+          <a href="#" class="btn btn-success">Discover Labs</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Sports Card -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow">
+        <img src="sports.avif" class="card-img-top" alt="Sports">
+        <div class="card-body">
+          <h5 class="card-title">Sports</h5>
+          <p class="card-text">Facilities for football, cricket, basketball, athletics, and indoor games.</p>
+          <a href="#" class="btn btn-warning">Join Now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
